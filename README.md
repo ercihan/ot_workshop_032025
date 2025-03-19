@@ -1,6 +1,16 @@
 # Workshop files
 In the following you can see the used `playbook` for the demonstration (excluded the Proxmark3 RDV4 demo part).
 
+## Prerequisits
+For this specific code you have to consider how the memory blocks are arranged in the RFID tag. Furthermore it's important to have a UID-writable RFID tag. The Lab401 `MIFARE Ultralight Compatible Direct Write UID` tag, which was used in the demonstration (available under: https://lab401.com/products/ultralight-compatiblr-direct-write-uid?_pos=15&_sid=d188d7e36&_ss=r) is suitable for this code.
+
+Also required for the correct functionioning of the demonstration, especially for the build-in LED, which switches from red to green, an Arduino MKR WiFi 1010.
+
+The module used in the demonstration, which were capable of reading out this RFID tags was the RC-522 module. There are plenty of alternatives to this product.
+
+The wiring should be made like this:<br>
+![wiringRfidModule](img/wiring.png)
+
 ## Playbook practice part table top OT
 1. Demonstrate the memorylayout of different RFID tags (normal blue one and LAB401 RFID tag)
    - This can be done with the `DumpOfMemory` project.<br>
